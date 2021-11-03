@@ -8,7 +8,6 @@
 // на 4.
 // var
 //   i, n, a, min: integer;
-
 // begin
 //   readln(n);
 //   min := 30000;
