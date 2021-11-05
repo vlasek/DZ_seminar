@@ -1,10 +1,10 @@
 ﻿//Написать программу вычисления значения функции y=f(a)
 
-int Function(int x)
+int Function(int a)
 {
-    int y = x * x ;
+    int y = a * a ;
     return y;
 }
-Console.WriteLine("Введите число перменную х: ");
+Console.WriteLine("Введите число перменную a: ");
 int a = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Ваш ответ"  + Function(a));
