@@ -1,4 +1,5 @@
 https://docs.google.com/spreadsheets/d/1nJusNa_ciNPgOl396bCmYZ0sTIlxevm1lnOyJzGiXns/edit#gid=0
+интересная форма записи Console.WriteLine($"Максимальное число в массиве {maxN}");
 
 Почувствуй себя интерном
  0. Вывести квадрат числа
