@@ -1,5 +1,13 @@
 https://docs.google.com/spreadsheets/d/1nJusNa_ciNPgOl396bCmYZ0sTIlxevm1lnOyJzGiXns/edit#gid=0
 интересная форма записи Console.WriteLine($"Максимальное число в массиве {maxN}");
+void PrintArray(int[]arr)
+{
+for (int i=0; i<arr.Length; i++)
+ {
+  Console.WriteLine($"{(arr[i]} ");
+ }
+ Console.WriteLine();Console.WriteLine();
+}
 
 Почувствуй себя интерном
  0. Вывести квадрат числа
