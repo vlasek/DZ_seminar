@@ -6,7 +6,7 @@ int GetRandom ()
 }
 
 int n, i=0, max=100;
-Console.WriteLine ("Введите конченый интервал");
+Console.WriteLine ("Введите конечный интервал");
 n = Convert.ToInt32(Console.ReadLine ());
 
 
@@ -18,7 +18,7 @@ i++;
 }
 
 i=0;
-//while (i<n){
+
 while (i<max) 
 {
     if ((A[i]%2 ==0 && A[i]<n)) Console.Write(A[i]+" "); 
