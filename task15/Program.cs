@@ -1,6 +1,6 @@
 ﻿//Показать числа от -N до N
 
-void met (int n)
+void metod (int n)
 {
 int count = -n;
 while (count< n+1)
@@ -11,4 +11,4 @@ while (count< n+1)
 }
 Console.WriteLine("Введите число ");
 int a = Convert.ToInt32(Console.ReadLine());
-met(a);
+metod(a);
