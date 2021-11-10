@@ -2,7 +2,7 @@
 
 int GetRandom ()
 {
-  return new Random().Next(-30000,30000);
+  return new Random().Next(1,3000);
 }
 
 int a, b, c, i=0 ;
@@ -19,6 +19,7 @@ while (i<10)
 A[i]=GetRandom();
 i++;
 }
+
 
 i=0;
 //while (i<n){
