@@ -2,13 +2,14 @@
 
 int Fibonachi()
 {
-    int f=1, s=0;
+    int f=0, f1=1;
     for (int i =0; i<40; i++)
     {
-    f=f+s;
-    s=f;
-    Console.WriteLine(f);
+    f=f+f1;
+    Console.Write($"{f} ");
+    f1=f-f1;
     }
     return f;
 }
+
 Console.WriteLine(Fibonachi());
