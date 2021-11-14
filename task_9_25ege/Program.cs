@@ -97,6 +97,7 @@ int [] d =  new int [4] ;
         if (numDel == 4)  {Console.WriteLine($"{d[1]},  {d[2]},  {d[3]}, {d[4]}"); }
  }
 
+
  
  
  
