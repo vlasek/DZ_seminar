@@ -1,13 +1,28 @@
-﻿// угадай случайное число
+﻿// 48. Создать игру "Угадай число"
 
-int a=new Random().Next(0,100);
-int a=0, b=100;
+Console.WriteLine("Угадай число от 1 до 100 за 7 попыток");
+int n = new Random().Next(1,100);
+int i = 0;
 
-int Proverka(int P)
-{
-
-}
-
-
-Console.WriteLine();
-
+while (i<7)
+    {
+        Console.Write("Введите число: ");
+        int a = Convert.ToInt32(Console.ReadLine());    
+        if (a > n)
+        {
+            Console.WriteLine("Нужно меньше");
+        }
+        else if (a < n) 
+        {
+            Console.WriteLine("Нужно больше");
+        }
+        else if (a == n)
+        {
+            Console.WriteLine("УРА! Вы выиграли! За "+ (i+1) +" попыток"); 
+            break;
+            
+        }
+        i++;
+       
+    }
+if (i==7) {Console.WriteLine("Вы проиграли");}
