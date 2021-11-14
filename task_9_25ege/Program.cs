@@ -6,3 +6,54 @@
 // Например, в диапазоне [10; 16] ровно четыре различных натуральных делителя 
 // имеет число 12, поэтому для этого диапазона вывод на экране должна содержать 
 // следующие значения: 2 3 4 6
+
+void PrintArray(int [] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {Console.Write($"{(array[i])} ");}
+    Console.WriteLine();
+}
+
+int [] A = new int [26];
+A[0]=210;
+void FillArray (int [] array)
+{
+    for (int i = 1; i < 26; i++)
+    {
+   A[i]=A[i-1]+1; 
+    }
+}
+FillArray(A);
+Console.WriteLine("Печать массива: ");
+PrintArray(A);
+
+int i=0;
+int sum=0;
+//void CheckArray(int [] array)
+// {
+//     //int sum=0;
+//     for (i = 0; i < 26; i++)
+//     {
+//         for (int j=2; j<A[j]; j++)
+//         {
+//             if (A[i]%A[j]==0) {Console.WriteLine(j);
+//             sum++;}
+//         }
+//     }
+// }
+
+//CheckArray(A);
+//Console.WriteLine(sum);
+// for (int i=210; i<=235; i++)
+// {
+//     if (i)
+// }
+
+i=0;
+for (i=0; i<26; i++)
+{
+    for (int j=1; j<26; j++)
+    {
+    if (A[i]%A[j]==0) Console.WriteLine(A[j]);
+    }
+}
