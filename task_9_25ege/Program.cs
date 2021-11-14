@@ -27,8 +27,10 @@ FillArray(A);
 Console.WriteLine("Печать массива: ");
 PrintArray(A);
 
-int i=0;
-int sum=0;
+// int i=0;
+// int sum=0;
+
+
 //void CheckArray(int [] array)
 // {
 //     //int sum=0;
@@ -49,11 +51,52 @@ int sum=0;
 //     if (i)
 // }
 
+// i=0;
+// for (i=0; i<26; i++)
+// {
+//     for (int j=1; j<26; j++)
+//     {
+//     if (A[i]%A[j]==0) Console.WriteLine(A[j]);
+//     }
+// }
+
+
+
+//решение на паскале
+// var 
+//     numDel, i, j: longint;
+//     d: array[1..4] of longint;
+// begin
+//     for i := 210235 to 210300 do begin
+//         numDel := 0;
+//         for j := 2 to (i div 2) do begin
+//             if i mod j = 0 then begin
+//                 numDel := numDel + 1;
+//                 if numDel > 4 then break;
+//                 d[numDel] := j;
+//             end;
+//         end;
+//         if numDel = 4 then writeln(d[1], ' ', d[2], ' ', d[3], ' ', d[4]);
+//     end;
+// end.
+
+
+int numDel, j;
 i=0;
-for (i=0; i<26; i++)
-{
-    for (int j=1; j<26; j++)
-    {
-    if (A[i]%A[j]==0) Console.WriteLine(A[j]);
+int [] d =  new int {1, 2, 3, 4} ;
+
+
+ for (int i = 210235; i<210300; i++)
+ { numDel = 0;
+    for (int j = 2; j< (i/2); j++)
+    { if (i % j == 0) 
+        { numDel = numDel + 1;
+        if (numDel > 4)  break;
+        d[numDel] = j;
+        };
     }
-}
+        if (numDel == 4)  Console.WriteLine($"{d[1]},  {d[2]},  {d[3]}, {d[4]}"); 
+ };
+ }
+ 
+ 
