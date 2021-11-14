@@ -7,25 +7,25 @@
 // имеет число 12, поэтому для этого диапазона вывод на экране должна содержать 
 // следующие значения: 2 3 4 6
 
-void PrintArray(int [] array)
-{
-    for (int i = 0; i < array.Length; i++)
-    {Console.Write($"{(array[i])} ");}
-    Console.WriteLine();
-}
+// void PrintArray(int [] array)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//     {Console.Write($"{(array[i])} ");}
+//     Console.WriteLine();
+// }
 
-int [] A = new int [26];
-A[0]=210;
-void FillArray (int [] array)
-{
-    for (int i = 1; i < 26; i++)
-    {
-   A[i]=A[i-1]+1; 
-    }
-}
-FillArray(A);
-Console.WriteLine("Печать массива: ");
-PrintArray(A);
+// int [] A = new int [26];
+// A[0]=210;
+// void FillArray (int [] array)
+// {
+//     for (int i = 1; i < 26; i++)
+//     {
+//    A[i]=A[i-1]+1; 
+//     }
+// }
+// FillArray(A);
+// Console.WriteLine("Печать массива: ");
+// PrintArray(A);
 
 // int i=0;
 // int sum=0;
@@ -81,22 +81,22 @@ PrintArray(A);
 // end.
 
 
-int numDel, j;
-i=0;
-int [] d =  new int {1, 2, 3, 4} ;
+int numDel, i, j;
+
+int [] d =  new int [4] ;
 
 
- for (int i = 210235; i<210300; i++)
+ for (i = 210235; i<210300; i++)
  { numDel = 0;
-    for (int j = 2; j< (i/2); j++)
-    { if (i % j == 0) 
-        { numDel = numDel + 1;
-        if (numDel > 4)  break;
+    for (j = 2; j< (i/2); j++)
+    { if (i % j == 0) numDel = numDel + 1;
+        if (numDel > 4) { break;}
         d[numDel] = j;
-        };
+        
     }
-        if (numDel == 4)  Console.WriteLine($"{d[1]},  {d[2]},  {d[3]}, {d[4]}"); 
- };
+        if (numDel == 4)  {Console.WriteLine($"{d[1]},  {d[2]},  {d[3]}, {d[4]}"); }
  }
+
+ 
  
  
