@@ -81,23 +81,75 @@
 // end.
 
 
-int numDel, i, j;
+int CountDiv (int n)
+{
+    List<int> list=new List<int>();
+    
+    list.Add(1);
+    list[0]=1;
+    list>remove(1);
+    list.RemoveAt(0);
 
-int [] d =  new int [4] ;
-
-
- for (i = 210235; i<210300; i++)
- { numDel = 0;
-    for (j = 2; j< (i/2); j++)
-    { if (i % j == 0) numDel = numDel + 1;
-        if (numDel > 4) { break;}
-        d[numDel] = j;
-        
+    //int k=0;
+    for (int i=2; i<n; i++)
+    if (n%i==0) 
+    {//k++;
+    list.Add(i);
     }
-        if (numDel == 4)  {Console.WriteLine($"{d[1]},  {d[2]},  {d[3]}, {d[4]}"); }
- }
+    return list; //k;
+}
+Console.WriteLine(CountDiv(12));
+
+for (int i=210235; i<210300; i++)
+    if (CountDiv(i)==4)
+    Console.WriteLine(i);
+
+// int numDel, i, j;
+
+// int [] d =  new int [4] ;
 
 
+//  for (i = 210235; i<210300; i++)
+//  { numDel = 0;
+//     for (j = 2; j< (i/2); j++)
+//     { if (i % j == 0) numDel = numDel + 1;
+//         if (numDel > 4) { break;}
+//     d[numDel] = j;
+        
+//     }
+//         if (numDel == 4)  {Console.WriteLine($"{d[1]},  {d[2]},  {d[3]}, {d[4]}"); }
+//  }
+
+
+
+от заярного
+List<int> CountDiv(int n)
+{
+    List<int> list=new List<int>();    
+    for(int i=2;i<n;i++)
+        if (n%i==0) 
+        {            
+            list.Add(i);
+        }
+    return list;
+}
+
+
+List<int> list;
+for(int i=210235;i<=210300;i++)
+{
+    list=CountDiv(i);
+    if (list.Count==4)
+    {
+        Console.Write(i+":");
+        for(int j=0;j<list.Count;j++)
+        {
+            Console.Write(list[j]+" ");
+        }
+        Console.WriteLine();
+
+    }
+}
  
  
  
