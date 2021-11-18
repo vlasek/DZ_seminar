@@ -1,7 +1,7 @@
 ﻿// 13. Выяснить, кратно ли число заданному, если нет, вывести остаток.
 
 int a=new Random().Next(0,100);
-Console.WriteLine (" Введите чему должно быть кратно число: ")ж
+Console.WriteLine (" Введите чему должно быть кратно число: ");
 int b=Convert.ToInt32(Console.ReadLine());
 
 string Delete2Number (int n)
