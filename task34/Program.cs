@@ -14,11 +14,12 @@ void PrintArray(int [] array)
 
 int[] B = new int [8];
 int[] A = new int [8];
+int length=7;
 void ChangeSign (int [] array)
 {
     for (int i = 0; i < 8; i++)
     {
-        B[i]= -A[i];
+        B[i]= A[length-i];
     }
     
 }

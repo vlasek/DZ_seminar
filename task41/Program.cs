@@ -13,7 +13,7 @@ string CheckTriangle (int a, int b, int c)
 {
     string result=String.Empty;
     if (a+b>c && a+c>b && c+b>a) result=" Это стороны теругольника";
-        else {result=result + $" Это не стороны теругольника";}
+        else {result=result + $" Это не стороны треугольника";}
     return result;
 }
 
