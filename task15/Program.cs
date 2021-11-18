@@ -1,14 +1,8 @@
-﻿//Показать числа от -N до N
+﻿//15. Дано число. Проверить кратно ли оно 7 и 23
 
-void metod (int n)
-{
-int count = -n;
-while (count< n+1)
-{
-    Console.Write($"{count} ");
-    count++;
-}
-}
-Console.WriteLine("Введите число ");
-int a = Convert.ToInt32(Console.ReadLine());
-metod(a);
+
+int a=new Random().Next(100,1000);
+Console.WriteLine(a);
+
+
+if (a%7==0 && a%23==0) {Console.WriteLine("КРАТНО");}
