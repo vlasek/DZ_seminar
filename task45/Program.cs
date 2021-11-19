@@ -3,7 +3,7 @@
 int Fibonachi()
 {
     int f=0, f1=1;
-    for (int i =0; i<40; i++)
+    for (int i =0; i<45; i++)
     {
     f=f+f1;
     Console.Write($"{f} ");
