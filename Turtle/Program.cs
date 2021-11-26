@@ -105,3 +105,43 @@ namespace Test{
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+using System;
+using Microsoft.SmallBasic.Library;
+
+namespace TurtleTest2
+{
+    class Program
+    {
+        static void РекурсивныйУзор(int x,int y,int r)
+        {
+            GraphicsWindow.DrawEllipse(x-r/2, y-r/2, r, r);
+            if (r>30)
+            {
+                РекурсивныйУзор(x - r / 2, y, r / 2);
+                РекурсивныйУзор(x + r / 2, y, r / 2);
+                РекурсивныйУзор(x , y+r/2, r / 2);
+                РекурсивныйУзор(x, y-r/2, r / 2);
+            }
+
+        }
+
+        static void Main(string[] args)
+        {
+            GraphicsWindow.Width = 1000;
+            GraphicsWindow.Height = 1000;
+            РекурсивныйУзор(500, 500, 200);
+        }
+    }
+}
